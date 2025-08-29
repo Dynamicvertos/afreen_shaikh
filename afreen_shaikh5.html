@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography of Prophet Ibrahim (A.S.)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(to bottom, #f9f5e9, #e8dfca);
+            color: #5c4b37;
+            line-height: 1.7;
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #8b5a2b 0%, #6c451c 100%);
+            color: #fff;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            z-index: 1;
+        }
+        
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            color: #f3d9b5;
+        }
+        
+        .divider {
+            height: 3px;
+            width: 100px;
+            background: linear-gradient(to right, transparent, #d4a76a, transparent);
+            margin: 20px auto;
+        }
+        
+        .content {
+            background-color: #fffdf7;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+            border: 1px solid #e8dfca;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            color: #8b5a2b;
+            font-size: 2.2rem;
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e8dfca;
+            position: relative;
+        }
+        
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #d4a76a;
+        }
+        
+        h3 {
+            font-family: 'Cormorant Garamond', serif;
+            color: #8b5a2b;
+            font-size: 1.8rem;
+            margin: 25px 0 15px;
+        }
+        
+        h4 {
+            font-family: 'Cormorant Garamond', serif;
+            color: #8b5a2b;
+            font-size: 1.5rem;
+            margin: 20px 0 10px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+            color: #5c4b37;
+            line-height: 1.8;
+        }
+        
+        .quote {
+            background-color: #f8f5e9;
+            border-left: 4px solid #d4a76a;
+            padding: 20px;
+            margin: 25px 0;
+            font-style: italic;
+            position: relative;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .quote::before {
+            content: """;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4rem;
+            color: #d4a76a;
+            position: absolute;
+            top: -15px;
+            left: 10px;
+            opacity: 0.3;
+        }
+        
+        .qualities-list {
+            background-color: #f8f5e9;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        
+        .qualities-list ul {
+            list-style-type: none;
+        }
+        
+        .qualities-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .qualities-list li::before {
+            content: "✓";
+            color: #8b5a2b;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 10px;
+            top: 2px;
+            font-weight: bold;
+        }
+        
+        .timeline {
+            position: relative;
+            margin: 40px 0;
+            padding-left: 30px;
+        }
+        
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background-color: #d4a76a;
+        }
+        
+        .timeline-item {
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -33px;
+            top: 8px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #8b5a2b;
+            border: 3px solid #d4a76a;
+        }
+        
+        .timeline-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            color: #8b5a2b;
+            margin-bottom: 5px;
+        }
+        
+        .timeline-content {
+            color: #5c4b37;
+        }
+        
+        .symbol {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 3rem;
+            color: #d4a76a;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #8b5a2b;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .subtitle {
+                font-size: 1.4rem;
+            }
+            .content {
+                padding: 20px;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Prophet Ibrahim (A.S.)</h1>
+            <div class="subtitle">The Friend of Allah - Khalilullah</div>
+            <div class="divider"></div>
+            <p>An inspiring journey of faith, sacrifice, and devotion</p>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                <h2>Birth and Early Life</h2>
+                <p>Prophet Ibrahim (A.S.), known as Abraham in the Bible, was born in the ancient city of Ur in Mesopotamia (present-day Iraq). He belonged to a family that practiced idol worship. His father, Azar (or Terah), was a well-known idol-maker. Despite growing up in such an environment, Ibrahim (A.S.) was blessed with wisdom from an early age. He questioned the beliefs of his people and sought the truth about the Creator of the universe.</p>
+            </div>
+
+            <div class="symbol">
+                <i class="fas fa-star-and-crescent"></i>
+            </div>
+
+            <div class="section">
+                <h2>Search for the Truth</h2>
+                <p>Ibrahim (A.S.) observed nature and realized that the sun, moon, and stars could not be gods because they set and disappeared. Through deep reflection, he concluded that there is only One God (Allah) who is eternal and controls everything. This strong belief made him a pioneer of monotheism.</p>
+                
+                <div class="quote">
+                    <p>"When the night grew dark upon him, he saw a star and said, 'This is my Lord!' But when it set, he said, 'I do not love things that set.'" (Quran 6:76)</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Confronting Idol Worship</h2>
+                <p>One of the great things about Ibrahim (A.S.) was his courage to stand against falsehood. He openly challenged his father and his people about idol worship. When they refused to listen, he demonstrated the powerlessness of idols by breaking them, leaving only the largest idol, to show that idols could not defend themselves. For this, he was thrown into a massive fire by King Namrud (Nimrod), but Allah saved him, making the fire cool and safe.</p>
+            </div>
+
+            <div class="symbol">
+                <i class="fas fa-hands-praying"></i>
+            </div>
+
+            <div class="section">
+                <h2>Migration for Faith</h2>
+                <p>Due to the opposition he faced, Ibrahim (A.S.) migrated from his homeland with his followers to spread the message of Allah. He traveled through different lands, including Egypt, Syria, and Palestine, always calling people towards Tawheed (Oneness of Allah).</p>
+            </div>
+
+            <div class="section">
+                <h2>Tests and Sacrifices</h2>
+                <p>Prophet Ibrahim (A.S.) was tested many times by Allah, and he always succeeded because of his patience and obedience.</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-title">Sacrifice of His Son</div>
+                        <div class="timeline-content">Allah commanded him in a dream to sacrifice his beloved son, Ismail (A.S.). Ibrahim (A.S.) prepared to obey without hesitation. Before he could sacrifice his son, Allah replaced Ismail with a ram, rewarding Ibrahim's sincerity.</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-title">Leaving His Family</div>
+                        <div class="timeline-content">He left Hajar (Hagar) and Ismail in the barren desert of Makkah, trusting Allah's plan. From that event came the well of Zamzam and the holy city of Makkah.</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-title">Building the Kaaba</div>
+                        <div class="timeline-content">Along with Ismail (A.S.), he built the Kaaba, which remains the holiest site for Muslims.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Prophet Ibrahim's Qualities</h2>
+                <div class="qualities-list">
+                    <ul>
+                        <li><strong>Faith:</strong> His unwavering faith in Allah was the foundation of his character.</li>
+                        <li><strong>Patience:</strong> He exhibited immense patience during trials and tribulations.</li>
+                        <li><strong>Courage:</strong> He fearlessly confronted falsehood and stood up for the truth.</li>
+                        <li><strong>Compassion:</strong> He showed kindness and compassion to all, including his enemies.</li>
+                        <li><strong>Leadership:</strong> He was a natural leader, guiding his followers with wisdom and integrity.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="symbol">
+                <i class="fas fa-mosque"></i>
+            </div>
+
+            <div class="section">
+                <h2>Death and Legacy</h2>
+                <p>Prophet Ibrahim (A.S.) lived a long life and died in Palestine. He is honored by all Abrahamic religions (Islam, Christianity, Judaism). His life is an example of faith, sacrifice, and devotion to Allah.</p>
+                
+                <div class="quote">
+                    <p>"Ibrahim was a nation [in himself] devoutly obedient to Allah, inclining toward truth, and he was not of those who associate others with Allah." (Quran 16:120)</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 • The Life of Prophet Ibrahim (A.S.) • May peace be upon him</p>
+             <p>created by Afreen Shaikh</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imam Hussain (AS) | Biography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(to bottom, #f9f5f0, #e8e1d5);
+            color: #333;
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(to right, #8B0000, #A52A2A);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid #c19b37;
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #c19b37;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 5px;
+            background: white;
+            object-fit: cover;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            color: #FFD700;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .nav-btn {
+            background: linear-gradient(to bottom, #c19b37, #9c7a2b);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .nav-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+            background: linear-gradient(to bottom, #d4af37, #a98a2f);
+        }
+        
+        .nav-btn:active {
+            transform: translateY(0);
+        }
+        
+        .content {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-top: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid #8B0000;
+        }
+        
+        .content-section {
+            margin-bottom: 40px;
+        }
+        
+        .content-section h2 {
+            color: #8B0000;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #c19b37;
+            position: relative;
+        }
+        
+        .content-section h2:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: #8B0000;
+        }
+        
+        .content-section p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .quote {
+            background: #f9f5e9;
+            border-left: 4px solid #c19b37;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            position: relative;
+        }
+        
+        .quote:before {
+            content: '"';
+            font-size: 4rem;
+            color: #c19b37;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            opacity: 0.3;
+        }
+        
+        .image-gallery {
+            display: flex;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .image-gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .image-gallery img:hover {
+            transform: scale(1.03);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .source-link {
+            color: #8B0000;
+            text-decoration: none;
+            margin: 20px 0;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+        
+        .source-link:hover {
+            color: #c19b37;
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-btn {
+                width: 80%;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+            
+            .logo-container {
+                gap: 15px;
+            }
+            
+            .logo {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img class="logo" src="https://plus.unsplash.com/premium_photo-1676498076599-2e303ba84718?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imam Hussain">
+                <img class="logo" src="https://plus.unsplash.com/premium_photo-1670745800247-271e8977da41?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imam Hussain Calligraphy">
+            </div>
+            <h1>Imam Hussain (AS)</h1>
+            <p class="subtitle">The grandson of Prophet Muhammad (PBUH) and a symbol of sacrifice, justice, and resistance against oppression</p>
+            
+            <div class="nav-buttons">
+                <button class="nav-btn" onclick="window.location.href='index.html'">
+                    <i class="fas fa-home"></i> Home
+                </button>
+                <button class="nav-btn" ">
+                    <i class="fas fa-star-and-crescent"></i> Karbala
+                </button>
+                <button class="nav-btn">
+                    <i class="fas fa-book"></i> Teachings
+                </button>
+                <button class="nav-btn" >
+                    <i class="fas fa-heart"></i> Legacy
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="content-section">
+                <h2>Introduction</h2>
+                <p>Imam Hussain (AS) was the son of Imam Ali (AS), the cousin of the Prophet Muhammad (PBUH), and Fatima (AS), the Prophet's daughter. He was the younger brother of Imam Hassan (AS) and is revered as the third Imam in Shia Islam.</p>
+                
+                <div class="image-gallery">
+                    <img src="https://plus.unsplash.com/premium_photo-1676498076599-2e303ba84718?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imam Hussain">
+                    <img src="https://plus.unsplash.com/premium_photo-1670745800247-271e8977da41?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Islamic Art">
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Birth and Early Life</h2>
+                <p>Imam Hussain was born on the 3rd of Sha'ban in the year 626 AD (4 AH) in Medina. He was named by the Prophet Muhammad (PBUH) himself, and his birth was celebrated with great joy in the Muslim community.</p>
+                
+                <div class="quote">
+                    The Prophet Muhammad (PBUH) said about Imam Hussain: "Hussain is from me and I am from Hussain. Allah loves whoever loves Hussain."
+                </div>
+                
+                <p>Raised in the household of the Prophet Muhammad (PBUH), Imam Hussain was instilled with the values of honesty, compassion, and justice from an early age. He witnessed his grandfather's efforts to establish a morally just society and learned the principles of Islam directly from him.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>The Conflict with Yazid</h2>
+                <p>After the Prophet Muhammad's death, disputes over leadership led to divisions within the Muslim community. Muawiya and then his son, Yazid, gained control of the caliphate, establishing the Umayyad dynasty which was known for its deviation from Islamic principles.</p>
+                
+                <p>Yazid was known for his cruelty and sought to legitimize his rule by forcing prominent Muslims to pledge allegiance to him. His lifestyle and policies were in direct contradiction to the teachings of Islam, focusing on personal pleasure and oppression rather than justice and piety.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>Hussain's Opposition and Stance</h2>
+                <p>Imam Hussain refused to pledge allegiance to Yazid, opposing what he saw as a corruption of Islamic principles and a departure from the Prophet's teachings. He believed that submitting to Yazid's rule would mean endorsing the destruction of Islamic values.</p>
+                
+                <div class="quote">
+                    Imam Hussain declared: "I did not rise up for the cause of evil or vanity. I only seek to reform the nation of my grandfather. I wish to enjoin good and forbid evil."
+                </div>
+                
+                <p>His refusal to pledge allegiance set the stage for one of the most significant events in Islamic history - the Battle of Karbala, where Imam Hussain and his small group of companions faced Yazid's large army in 680 AD (61 AH).</p>
+            </div>
+
+            <div class="content-section">
+                <h2>Legacy of Imam Hussain</h2>
+                <p>Imam Hussain's stand at Karbala became the ultimate symbol of resistance against tyranny and injustice. His sacrifice demonstrated that principles and values are worth dying for when confronted with oppression and corruption.</p>
+                
+                <p>Today, over 1,300 years later, Imam Hussain's message continues to inspire millions around the world who seek justice and stand against oppression. His legacy teaches the importance of standing up for truth, no matter the odds or consequences.</p>
+            </div>
+
+            <a href="https://unsplash.com/" class="source-link">
+                <i class="fas fa-external-link-alt"></i> Image Source: https://unsplash.com/
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>© 2025 Biography of Imam Hussain (AS) | Designed with reverence and respect</p>
+             <p>created by Afreen Shaikh</p>
+        </div>
+    </div>
+
+    <script>
+        function navigateTo(page) {
+            // In a real scenario, this would redirect to the actual page
+            alert(`Navigating to ${page} page...`);
+            // window.location.href = `${page}.html`;
+        }
+    </script>
+</body>
+</html>

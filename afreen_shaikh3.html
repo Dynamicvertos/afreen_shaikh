@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazrat Adam (A.S.) | The First Prophet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(to bottom, #e8f4f8, #c5dde8);
+            color: #333;
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(to right, #2a6b8b, #3a8cb0);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid #c19b37;
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #c19b37;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 5px;
+            background: white;
+            object-fit: cover;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .nav-btn {
+            background: linear-gradient(to bottom, #c19b37, #9c7a2b);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .nav-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+            background: linear-gradient(to bottom, #d4af37, #a98a2f);
+        }
+        
+        .nav-btn:active {
+            transform: translateY(0);
+        }
+        
+        .content {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-top: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid #2a6b8b;
+        }
+        
+        .content-section {
+            margin-bottom: 40px;
+        }
+        
+        .content-section h2 {
+            color: #2a6b8b;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #c19b37;
+            position: relative;
+        }
+        
+        .content-section h2:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: #2a6b8b;
+        }
+        
+        .content-section p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .quote {
+            background: #e8f4f8;
+            border-left: 4px solid #2a6b8b;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            position: relative;
+        }
+        
+        .quote:before {
+            content: '"';
+            font-size: 4rem;
+            color: #2a6b8b;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            opacity: 0.3;
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        
+        .content-image {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 3px solid #c19b37;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .source-link {
+            color: #2a6b8b;
+            text-decoration: none;
+            margin: 20px 0;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+        
+        .source-link:hover {
+            color: #c19b37;
+            text-decoration: underline;
+        }
+        
+        .key-points {
+            background: #f0f8ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+        
+        .key-points ul {
+            list-style-type: none;
+        }
+        
+        .key-points li {
+            padding: 10px 0;
+            border-bottom: 1px dashed #ccc;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .key-points li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #2a6b8b;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-btn {
+                width: 80%;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img class="logo" src="https://i.pinimg.com/736x/76/82/a9/7682a9901b47ad897b099f4edfb5ccd4.jpg" alt="Hazrat Adam (A.S.)">
+            </div>
+            <h1>Hazrat Adam (A.S.)</h1>
+            <p class="subtitle">The first human being and the first Prophet of Allah in Islamic belief</p>
+            
+            <div class="nav-buttons">
+                <button class="nav-btn" onclick="window.location.href='Index.html'">
+                    <i class="fas fa-home"></i> Home
+                </button>
+                <button class="nav-btn">
+                    <i class="fas fa-star-and-crescent"></i> Imam Hussain
+                </button>
+                <button class="nav-btn">
+                    <i class="fas fa-book"></i> Next Prophet
+                </button>
+                <button class="nav-btn">
+                    <i class="fas fa-heart"></i> Legacy
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="content-section">
+                <h2>Introduction</h2>
+                <p>Hazrat Adam (A.S.), known as Adam in Abrahamic religions, is regarded as the first human being and the first Prophet of Allah in Islamic belief. He is honored as the father of mankind and a key figure in the creation of humanity. His life is described in the Holy Qur'an, as well as in Hadith and earlier scriptures such as the Torah and Bible.</p>
+                
+                <div class="image-container">
+                    <img class="content-image" src="https://i.pinimg.com/736x/76/82/a9/7682a9901b47ad897b099f4edfb5ccd4.jpg" alt="Depiction of Hazrat Adam">
+                </div>
+                
+                <p>According to Islamic teachings, Allah created Adam (A.S.) from clay. Allah shaped him perfectly and breathed into him His spirit, granting him life and knowledge. Adam was given wisdom, intellect, and the ability to distinguish between right and wrong. He was taught the names of all things by Allah, which showed his superiority over the angels in terms of knowledge.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>Creation and Prostration of Angels</h2>
+                <p>Allah commanded the angels to prostrate before Adam as a sign of respect (not worship). All angels obeyed except Iblis (Satan), who refused out of pride and arrogance. This marked the beginning of enmity between Satan and mankind.</p>
+                
+                <div class="quote">
+                    "And We said, 'O Adam, dwell, you and your wife, in Paradise and eat therefrom in [ease and] abundance from wherever you will. But do not approach this tree, lest you be among the wrongdoers.'" (Quran 2:35)
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Life in Paradise</h2>
+                <p>Adam and his wife Hawwa (Eve) were placed in Paradise, where they enjoyed all its blessings. They were given permission to eat from all trees except one, which Allah forbade them from approaching. Satan deceived them into eating from the forbidden tree, leading to their descent to Earth.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>Life on Earth and Responsibilities</h2>
+                <p>Adam (A.S.) became the first Prophet on Earth. Allah guided him and gave him laws to follow and teach his children. He taught people about Tawheed (belief in one God), morality, and righteous living. Adam was a farmer and learned basic skills for survival.</p>
+                
+                <p>Adam and Hawwa had many children, including sons and daughters. The most well-known among them were Habil (Abel) and Qabil (Cain). A tragic event occurred when Qabil, out of jealousy, killed his brother Habil—the first murder in human history. This incident showed the dangers of envy and disobedience to Allah.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>Family of Adam (A.S.)</h2>
+                <p>Hazrat Adam (A.S.) and Hawwa are considered the ancestors of all humanity. According to Islamic sources, they had many offspring who spread across the Earth. Every generation began from their lineage, making them the universal parents of mankind.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>Teachings and Achievements</h2>
+                <p>Adam (A.S.) is remembered for several key roles:</p>
+                
+                <div class="key-points">
+                    <ul>
+                        <li>The first Prophet – He conveyed Allah's message of monotheism and obedience.</li>
+                        <li>The first teacher – He taught his children the basics of life, worship, and knowledge.</li>
+                        <li>The father of humanity – All human beings are his descendants.</li>
+                    </ul>
+                </div>
+                
+                <p>Adam's story teaches us lessons about obedience, repentance, humility, and the importance of avoiding Satan's tricks.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>Death of Hazrat Adam (A.S.)</h2>
+                <p>Adam (A.S.) lived for approximately 930 years (according to some traditions). When his time came, the Angel of Death took his soul. He was buried on Earth, and his children mourned his passing. Some Islamic narrations mention that he was buried in a sacred place, but the exact location is unknown.</p>
+            </div>
+
+            <a href="https://i.pinimg.com/736x/76/82/a9/7682a9901b47ad897b099f4edfb5ccd4.jpg" class="source-link">
+                <i class="fas fa-external-link-alt"></i> Image Source: https://i.pinimg.com/736x/76/82/a9/7682a9901b47ad897b099f4edfb5ccd4.jpg
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>© 2025 Biography of Hazrat Adam (A.S.) | Designed with reverence and respect</p>
+             <p>created by Afreen Shaikh</p>
+        </div>
+    </div>
+
+    <script>
+        function navigateTo(page) {
+            // In a real scenario, this would redirect to the actual page
+            alert(`Navigating to ${page} page...`);
+            // window.location.href = `${page}.html`;
+        }
+    </script>
+</body>
+</html>
